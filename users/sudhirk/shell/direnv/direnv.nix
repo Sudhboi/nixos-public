@@ -12,4 +12,5 @@
   ];
 
   home.file.".config/direnv/direnv.toml".source = ./direnv.toml;
+  home.file.".config/direnv/direnvrc".source = ./direnvrc;
 }

@@ -6,9 +6,6 @@
     { sh = "python3 ~/.config/niri/scripts/niri_tile_to_n.py"; }
     { sh = "waybar"; }
     { sh = "vicinae server"; }
-    { sh = "/usr/bin/niri-sidebar listen"; }
-    { sh = "quickshell"; }
-    { sh = "emacs --daemon"; }
 
     { sh = "/home/sudhirk/.scripts/battery.sh"; }
     { sh = "/home/sudhirk/.scripts/sync_boot.sh < /home/sudhirk/.scripts/git_folders.txt"; }

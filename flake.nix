@@ -17,10 +17,6 @@
 
     niri = {
       url = "github:sodiboo/niri-flake";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        home-manager.follows = "home-manager";
-      };
     };
   };
 

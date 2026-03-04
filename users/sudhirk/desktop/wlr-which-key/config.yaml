@@ -7,7 +7,7 @@ color: "#cdd6f4"
 border: "#000000"
 separator: " 󰜶  "
 border_width: 1
-corner_r: 0
+corner_r: 12
 padding: 15 # Defaults to corner_r
 rows_per_column: 5 # No limit by default
 column_padding: 25 # Defaults to padding
@@ -22,7 +22,7 @@ margin_top: 100
 
 # Permits key bindings that conflict with compositor key bindings.
 # Default is `false`.
-inhibit_compositor_keyboard_shortcuts: true
+inhibit_compositor_keyboard_shortcuts: false
 
 # Try to guess the correct keyboard layout to use. Default is `false`.
 auto_kbd_layout: true

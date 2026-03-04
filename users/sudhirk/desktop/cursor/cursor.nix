@@ -3,9 +3,17 @@
 {
   home.pointerCursor = {
     enable = true;
-    name = "Material Cursors";
-    package = pkgs.material-cursors;
+    name = "catppuccin-mocha-peach-cursors";
+    package = pkgs.catppuccin-cursors.mochaPeach;
 
     gtk.enable = true;
+    x11.enable = true;
   };
+  # home.pointerCursor = {
+  #   gtk.enable = true;
+  #   x11.enable = true;
+  #   package = pkgs.bibata-cursors;
+  #   name = "Bibata-Modern-Ice";
+  #   size = 24;
+  # };
 }

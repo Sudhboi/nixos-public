@@ -1,3 +1,5 @@
+sleep 3
+
 old_val="None"
 
 while true; do

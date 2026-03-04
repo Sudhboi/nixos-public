@@ -19,15 +19,6 @@
   # boot.loader.systemd-boot.enable = true;
   # boot.loader.systemd-boot.consoleMode = "max";
   # boot.loader.timeout = 1;
-
-  boot.loader = {
-    efi.canTouchEfiVariables = true;
-    systemd-boot = {
-      enable = true;
-      consoleMode = "max";
-    };
-  };
-
   networking.hostName = "nixos"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
@@ -37,6 +28,8 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  programs.steam.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/Moncton";
@@ -141,6 +134,7 @@
     libtool
     coreutils
     pciutils
+    catppuccin-cursors.mochaPeach
     fd
     clang
     vesktop

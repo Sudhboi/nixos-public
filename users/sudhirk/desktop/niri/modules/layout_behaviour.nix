@@ -24,7 +24,8 @@
 
     cursor = {
       hide-after-inactive-ms = 5000;
-      size = 24;
+      size = 20;
+      theme = "catppuccin-mocha-peach-cursors";
     };
 
     layer-rules = [
@@ -35,5 +36,11 @@
         place-within-backdrop = true;
       }
     ];
+
+    gestures = {
+      hot-corners = {
+        enable = false;
+      };
+    };
   };
 }
