@@ -1,35 +1,37 @@
-sleep 3
-
 old_val="None"
+
+function notif() {
+    notify-send -t 2000 "$1"
+}
 
 while true; do
     new_val=$(cat /sys/class/power_supply/BAT0/status)
     if [[ "$new_val" != "$old_val" ]]; then
         if [[ "$old_val" == "None" ]]; then
             if [[ "$new_val" == "Discharging" ]]; then
-                notify-send -t 4 "󰚦  Not Plugged In"
+                notif "󰚦  Not Plugged In"
             elif [[ "$new_val" == "Charging" ]]; then
-                notify-send -t 4 "󰚥  Plugged In and Charging"
+                notif "󰚥  Plugged In and Charging"
             elif [[ "$new_val" == "Not charging" ]]; then
-                notify-send -t 4 "  Charged to Capacity"
+                notif "  Charged to Capacity"
             fi
         elif [[ "$old_val" == "Charging" ]]; then
             if [[ "$new_val" == "Discharging" ]]; then
-                notify-send -t 4 "󱐤  Charger Removed"
+                notif "󱐤  Charger Removed"
             elif [[ "$new_val" == "Not charging" ]]; then
-                notify-send -t 4 "  Finished Charging"
+                notif "  Finished Charging"
             fi
         elif [[ "$old_val" == "Discharging" ]]; then
             if [[ "$new_val" == "Charging" ]]; then
-                notify-send -t 4 "󰚥  Plugged In and Charging"
+                notif "󰚥  Plugged In and Charging"
             elif [[ "$new_val" == "Not charging" ]]; then
-                notify-send -t 4 "  Already Charged to Capacity"
+                notif "  Already Charged to Capacity"
             fi
         elif [[ "$old_val" == "Not charging" ]]; then
             if [[ "$new_val" == "Charging" ]]; then
-                notify-send -t 4 "󰚥  Charging"
+                notif "󰚥  Charging"
             elif [[ "$new_val" == "Discharging" ]]; then
-                notify-send -t 4 "󰚦  Charger Removed at Capacity"
+                notif "󰚦  Charger Removed at Capacity"
             fi
         fi
     fi

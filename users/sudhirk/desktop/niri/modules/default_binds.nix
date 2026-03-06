@@ -4,11 +4,11 @@
   programs.niri.settings.binds = {
 
     "XF86AudioRaiseVolume" = {
-      action.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0";
+      action.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05+ -l 1.0 && /home/sudhirk/.scripts/volume.sh";
       allow-when-locked = true;
     };
     "XF86AudioLowerVolume" = {
-      action.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05-";
+      action.spawn-sh = "wpctl set-volume @DEFAULT_AUDIO_SINK@ 0.05- && /home/sudhirk/.scripts/volume.sh";
       allow-when-locked = true;
     };
     "XF86AudioMute" = {

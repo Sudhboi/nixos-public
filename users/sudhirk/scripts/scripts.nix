@@ -6,4 +6,5 @@
   home.file.".scripts/git_folders.txt".source = ./git_folders.txt;
 
   home.file.".scripts/battery.sh".source = ./battery.sh;
+  home.file.".scripts/volume.sh".source = ./volume.sh;
 }
