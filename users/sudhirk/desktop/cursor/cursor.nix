@@ -3,8 +3,8 @@
 {
   home.pointerCursor = {
     enable = true;
-    name = "catppuccin-mocha-rosewater-cursors";
-    package = pkgs.catppuccin-cursors.mochaRosewater;
+    name = "catppuccin-mocha-light-cursors";
+    package = pkgs.catppuccin-cursors.mochaLight;
 
     gtk.enable = true;
     x11.enable = true;

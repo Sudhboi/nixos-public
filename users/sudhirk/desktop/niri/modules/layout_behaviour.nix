@@ -25,7 +25,7 @@
     cursor = {
       hide-after-inactive-ms = 5000;
       size = 18;
-      theme = "catppuccin-mocha-rosewater-cursors";
+      theme = "catppuccin-mocha-light-cursors";
     };
 
     layer-rules = [

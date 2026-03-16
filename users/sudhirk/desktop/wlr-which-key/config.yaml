@@ -9,15 +9,15 @@ separator: " 󰜶  "
 border_width: 1
 corner_r: 12
 padding: 15 # Defaults to corner_r
-rows_per_column: 5 # No limit by default
+# rows_per_column: 5 # No limit by default
 column_padding: 25 # Defaults to padding
 
 # Anchor and margin
-anchor: top # One of center, left, right, top, bottom, bottom-left, top-left, etc.
+anchor: left # One of center, left, right, top, bottom, bottom-left, top-left, etc.
 # Only relevant when anchor is not center
 margin_right: -1
 margin_bottom: 200
-margin_left: 10
+margin_left: 100
 margin_top: 100
 
 # Permits key bindings that conflict with compositor key bindings.
@@ -68,7 +68,7 @@ menu:
         desc: "Programming"
         cmd: "kitty -e zsh -c \"source ~/.zshrc && y ~/Programming; exec zsh\""
       - key: "L"
-        desc: "Lean"
+        desc: "Languages"
         cmd: "kitty -e zsh -c \"source ~/.zshrc && y ~/Programming/Languages; exec zsh\""
       - key: "l"
         desc: "LaTypst"
@@ -78,28 +78,13 @@ menu:
         cmd: "kitty -e zsh -c \"source ~/.zshrc && y ~/Downloads; exec zsh\""
       - key: "a"
         desc: "Assignments"
-        cmd: "kitty -e zsh -c \"source ~/.zshrc && y ~/Programming/ASchoolWork/Assignments; exec zsh\""
-      - key: "q"
-        desc: "Quit"
-        cmd: ""
-  - key: "o"
-    desc: "Obsidian"
-    submenu:
-      - key: "1"
-        desc: "PSYC1023"
-        cmd: "xdg-open \"obsidian://open?vault=PSYC1023\""
-      - key: "2"
-        desc: "MATH3063"
-        cmd: "xdg-open \"obsidian://open?vault=MATH3063\""
+        cmd: "kitty -e zsh -c \"source ~/.zshrc && y ~/Programming/ASchoolWork/Ass; exec zsh\""
       - key: "q"
         desc: "Quit"
         cmd: ""
   - key: "d"
     desc: "Vesktop"
     cmd: "vesktop"
-  - key: "D"
-    desc: "Discordo"
-    cmd: "kitty discordo & (sleep 0.3 && /usr/bin/niri-sidebar toggle-window)"
   - key: "N"
     desc: "Notification"
     submenu:
@@ -217,6 +202,9 @@ menu:
   - key: "v"
     desc: "Vicinae"
     cmd: "vicinae toggle"
+  - key: "I"
+    desc: "Inkscape"
+    cmd: "inkscape"
   - key: "Q"
     desc: "Close Window"
     cmd: "niri msg action close-window"

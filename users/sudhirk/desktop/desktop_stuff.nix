@@ -10,7 +10,6 @@
     ./hypr/hypridle.nix
     ./hypr/hyprlock.nix
     ./hypr/hyprpaper.nix
+    ./wlr-which-key/wlr-which-key.nix
   ];
-
-  xdg.configFile."wlr-which-key/config.yaml".source = ./wlr-which-key/config.yaml;
 }

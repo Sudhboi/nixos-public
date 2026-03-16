@@ -6,10 +6,11 @@
     { sh = "python3 ~/.config/niri/scripts/niri_tile_to_n.py"; }
     { sh = "waybar"; }
     { sh = "vicinae server"; }
+    { sh = "dotoold"; }
 
     # { sh = "/home/sudhirk/.scripts/battery.sh"; }
     {
-      sh = "sleep 3 $$ (/home/sudhirk/.scripts/sync_boot.sh < /home/sudhirk/.scripts/git_folders.txt)";
+      sh = "/home/sudhirk/.scripts/sync_boot.sh < /home/sudhirk/.scripts/git_folders.txt";
     }
   ];
 }

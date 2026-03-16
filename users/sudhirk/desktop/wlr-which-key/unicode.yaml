@@ -1,0 +1,65 @@
+font: IosevkaTerm Nerd Font 12
+background: "#000000"
+color: "#cdd6f4"
+# border: "#89b4fb"
+border: "#000000"
+separator: " -> "
+border_width: 1
+corner_r: 0
+padding: 15 # Defaults to corner_r
+rows_per_column: 5 # No limit by default
+column_padding: 25 # Defaults to padding
+
+# Anchor and margin
+anchor: top # One of center, left, right, top, bottom, bottom-left, top-left, etc.
+# Only relevant when anchor is not center
+margin_right: -1
+margin_bottom: 200
+margin_left: 100
+margin_top: 0
+
+# Permits key bindings that conflict with compositor key bindings.
+# Default is `false`.
+inhibit_compositor_keyboard_shortcuts: false
+
+# Try to guess the correct keyboard layout to use. Default is `false`.
+auto_kbd_layout: true
+
+menu:
+  - key: "i"
+    desc: "∈"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ∈"
+  - key: "f"
+    desc: "∀"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ∀"
+  - key: "d"
+    desc: "·"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ·"
+  - key: "e"
+    desc: "∃"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ∃"
+  - key: "<"
+    desc: "⟨"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ⟨"
+  - key: ">"
+    desc: "⟩"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ⟩"
+  - key: "Z"
+    desc: "ℤ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ℤ"
+  - key: "R"
+    desc: "ℝ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ℝ"
+  - key: "s"
+    desc: "□"
+    cmd: "/home/sudhirk/.scripts/unicode.sh □"
+  - key: "a"
+    desc: "∠"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ∠"
+  - key: "t"
+    desc: "∴"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ∴"
+  - key: "b"
+    desc: "∵"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ∵"
+

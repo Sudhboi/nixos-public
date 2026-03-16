@@ -11,6 +11,11 @@
           on-timeout = "brightnessctl -s set 0";
           on-resume = "brightnessctl -r";
         }
+        {
+          timeout = 20;
+          on-timeout = "pkill waybar";
+          on-resume = "waybar";
+        }
       ];
     };
   };

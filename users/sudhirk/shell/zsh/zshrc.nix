@@ -57,9 +57,9 @@
       }
 
       function y() {
-          k1
+          # k1
           yq $1
-          k9
+          # k9
       }
 
       function n() {

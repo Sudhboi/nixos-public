@@ -1,0 +1,172 @@
+font: IosevkaTerm Nerd Font 12
+background: "#000000"
+color: "#cdd6f4"
+# border: "#89b4fb"
+border: "#000000"
+separator: " -> "
+border_width: 1
+corner_r: 0
+padding: 15 # Defaults to corner_r
+rows_per_column: 5 # No limit by default
+column_padding: 25 # Defaults to padding
+
+# Anchor and margin
+anchor: top # One of center, left, right, top, bottom, bottom-left, top-left, etc.
+# Only relevant when anchor is not center
+margin_right: -1
+margin_bottom: 200
+margin_left: 100
+margin_top: 0
+
+# Permits key bindings that conflict with compositor key bindings.
+# Default is `false`.
+inhibit_compositor_keyboard_shortcuts: false
+
+# Try to guess the correct keyboard layout to use. Default is `false`.
+auto_kbd_layout: true
+
+menu:
+  - key: a
+    desc: "α"
+    cmd: "/home/sudhirk/.scripts/unicode.sh α"
+  - key: b
+    desc: "β"
+    cmd: "/home/sudhirk/.scripts/unicode.sh β"
+  - key: g
+    desc: "γ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh γ"
+  - key: d
+    desc: "δ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh δ"
+  - key: e
+    desc: "ε"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ε"
+  - key: z
+    desc: "ζ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ζ"
+  - key: h
+    desc: "η"
+    cmd: "/home/sudhirk/.scripts/unicode.sh η"
+  - key: t
+    desc: "θ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh θ"
+  - key: i
+    desc: "ι"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ι"
+  - key: k
+    desc: "κ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh κ"
+  - key: l
+    desc: "λ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh λ"
+  - key: m
+    desc: "μ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh μ"
+  - key: n
+    desc: "ν"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ν"
+  - key: x
+    desc: "ξ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ξ"
+  - key: o
+    desc: "ο"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ο"
+  - key: p
+    desc: "π"
+    cmd: "/home/sudhirk/.scripts/unicode.sh π"
+  - key: r
+    desc: "ρ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ρ"
+  - key: s
+    desc: "σ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh σ"
+  - key: t
+    desc: "τ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh τ"
+  - key: u
+    desc: "υ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh υ"
+  - key: v
+    desc: "φ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh φ"
+  - key: c
+    desc: "χ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh χ"
+  - key: z
+    desc: "ψ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ψ"
+  - key: q
+    desc: "ω"
+    cmd: "/home/sudhirk/.scripts/unicode.sh ω"
+  - key: A
+    desc: "Α"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Α"
+  - key: B
+    desc: "Β"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Β"
+  - key: G
+    desc: "Γ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Γ"
+  - key: D
+    desc: "Δ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Δ"
+  - key: E
+    desc: "Ε"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ε"
+  - key: Z
+    desc: "Ζ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ζ"
+  - key: H
+    desc: "Η"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Η"
+  - key: T
+    desc: "Θ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Θ"
+  - key: I
+    desc: "Ι"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ι"
+  - key: k
+    desc: "Κ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Κ"
+  - key: L
+    desc: "Λ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Λ"
+  - key: M
+    desc: "Μ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Μ"
+  - key: N
+    desc: "Ν"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ν"
+  - key: X
+    desc: "Ξ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ξ"
+  - key: O
+    desc: "Ο"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ο"
+  - key: P
+    desc: "Π"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Π"
+  - key: R
+    desc: "Ρ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ρ"
+  - key: S
+    desc: "Σ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Σ"
+  - key: T
+    desc: "Τ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Τ"
+  - key: Y
+    desc: "Υ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Υ"
+  - key: V
+    desc: "Φ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Φ"
+  - key: C
+    desc: "Χ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Χ"
+  - key: Z
+    desc: "Ψ"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ψ"
+  - key: Q
+    desc: "Ω"
+    cmd: "/home/sudhirk/.scripts/unicode.sh Ω"
