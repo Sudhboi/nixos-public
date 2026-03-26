@@ -105,9 +105,6 @@
     nerd-fonts.jetbrains-mono
   ];
 
-  # Install firefox.
-  programs.firefox.enable = true;
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -140,7 +137,14 @@
   ];
 
   # services.swapspace.enable = true;
-
+  # services.howdy = {
+  #   enable = true;
+  #   settings = {
+  #     device = "/dev/video0";
+  #   };
+  # };
+  #
+  # security.pam.howdy.enable = true;
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     gcc

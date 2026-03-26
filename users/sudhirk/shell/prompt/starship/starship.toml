@@ -26,6 +26,7 @@ $time\
 [ ](fg:lavender)\
 $cmd_duration\
 $line_break\
+$nix_shell\
 $character"""
 
 palette = 'catppuccin_mocha'
@@ -158,6 +159,9 @@ vimcmd_symbol = '[❮](bold fg:green)'
 vimcmd_replace_one_symbol = '[❮](bold fg:lavender)'
 vimcmd_replace_symbol = '[❮](bold fg:lavender)'
 vimcmd_visual_symbol = '[❮](bold fg:yellow)'
+
+[nix_shell]
+format = "[ ](fg:blue)"
 
 [cmd_duration]
 show_milliseconds = true

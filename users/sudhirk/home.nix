@@ -40,14 +40,11 @@
     ncdu
     vicinae
     heroic
-    tikzit
     nautilus
-    element-desktop
-    iamb
     inkscape
     wl-clipboard
     dotool
-    sunshine
+    pinta
     xwayland-satellite
     # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the

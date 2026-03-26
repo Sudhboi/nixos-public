@@ -27,8 +27,14 @@ auto_kbd_layout: true
 
 menu:
   - key: "i"
-    desc: "∈"
-    cmd: "/home/sudhirk/.scripts/unicode.sh ∈"
+    desc: ""
+    submenu:
+     - key : "n"
+       desc: "∈"
+       cmd: "/home/sudhirk/.scripts/unicode.sh ∈"
+     - key : "s"
+       desc: "≈"
+       cmd: "/home/sudhirk/.scripts/unicode.sh ≈"
   - key: "f"
     desc: "∀"
     cmd: "/home/sudhirk/.scripts/unicode.sh ∀"
