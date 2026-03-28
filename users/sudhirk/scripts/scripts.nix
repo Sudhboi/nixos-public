@@ -7,4 +7,6 @@
 
   home.file.".scripts/battery.sh".source = ./battery.sh;
   home.file.".scripts/volume.sh".source = ./volume.sh;
+
+  home.file.".scripts/drift".source = ./drift;
 }

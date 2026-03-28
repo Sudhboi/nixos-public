@@ -41,6 +41,7 @@
     vicinae
     heroic
     nautilus
+    speedtest-cli
     inkscape
     wl-clipboard
     dotool
