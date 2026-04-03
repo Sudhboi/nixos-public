@@ -127,7 +127,7 @@
     libtool
     coreutils
     pciutils
-    catppuccin-cursors.mochaPeach
+    gcc
     fd
     clang
     vesktop
@@ -161,7 +161,14 @@
   # List services that you want to enable:
 
   # Enable the OpenSSH daemon.
-  # services.openssh.enable = true;
+  services.openssh = {
+    enable = true;
+    ports = [ 6769 ];
+    settings = {
+      PermitRootLogin = "no";
+      AllowUsers = [ "sudhirk" ];
+    };
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];

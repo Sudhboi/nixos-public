@@ -42,6 +42,7 @@
     heroic
     nautilus
     speedtest-cli
+    mpv
     inkscape
     wl-clipboard
     dotool

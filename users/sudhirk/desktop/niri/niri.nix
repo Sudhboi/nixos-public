@@ -8,6 +8,7 @@
     ./modules/system.nix
     ./modules/default_binds.nix
     ./modules/startup_spawns.nix
+    ./modules/animations.nix
   ];
 
   programs.niri = {
