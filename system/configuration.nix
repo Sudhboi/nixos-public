@@ -126,6 +126,8 @@
     nixfmt
     ripgrep
     libtool
+    zip
+    unzip
     coreutils
     pciutils
     gcc

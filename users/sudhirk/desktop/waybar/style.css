@@ -1,5 +1,5 @@
 @define-color background rgba(46, 52, 64, 0.98);
-@define-color text-color rgb(0,0,0);
+@define-color text-color rgb(0, 0, 0);
 /* @define-color text-color rgb(36, 39, 58); */
 /* @define-color text-color rgb(205, 214, 244); */
 @define-color background-translucent rgba(0, 0, 0, 0);

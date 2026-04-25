@@ -44,7 +44,7 @@
     },
 
     "clock#full": {
-        "format": "{:%A, %d-%m-%Y (%B)}",
+        "format": "{:%e %B, %A (%d-%m-%Y)}",
         "interval": 3600
     },
 
@@ -75,7 +75,7 @@
     // },
 
     "pulseaudio": {
-        "format": "{volume}% {icon}",
+        "format": "{volume}% {icon} ",
         "format-bluetooth": "{volume}% {icon}",
         "format-muted": "",
         "format-icons": {
@@ -114,7 +114,7 @@
         //"tooltip-format": "{ifname} via {gwaddr} ",
         "tooltip-format": "{essid}: {ipaddr}",
         "format-linked": "{ifname} (No IP) ",
-        "format-disconnected": "󱛅 ",
+        "format-disconnected": "󱛅 !󰯇 ",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}: {essid}",
         "on-click": "kitty nmtui",
     },
@@ -128,7 +128,7 @@
     },
 
     "backlight": { "device": "intel_backlight",
-        "format": "{percent}% {icon}",
+        "format": "{percent}% {icon} ",
         "format-icons": ["", ""]
     },
 
@@ -162,21 +162,20 @@
         "format-icons": ["", "", "", "", ""],
         "max-length": 25,
         "format-charging": "{capacity}%  ",
-        "format-plugged": "{capacity}%  ",
+        "format-plugged": "󱟢",
     },
 
     "battery#timeruntil": {
         "interval": 300,
-        "full-at": 80,
         "format-time": "{H}h {M}m",
         "format": "{time} ",
-        "format-plugged": "󰔓",
+        "format-plugged": "{capacity}% 󰟨 ",
     },
 
     "battery#currentpower": {
         "interval": 10,
         "format": "{power}W 󱐋",
-        "format-plugged": "󱤁",
+        "format-plugged": "",
     },
 
 

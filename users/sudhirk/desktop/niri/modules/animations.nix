@@ -243,14 +243,18 @@
             XF86MonBrightnessDown allow-when-locked=true { spawn-sh "brightnessctl --class=backlight set 5%-"; }
             XF86MonBrightnessUp allow-when-locked=true { spawn-sh "brightnessctl --class=backlight set +5%"; }
         }
-        spawn-sh-at-startup "hyprlock --grace 10"
+        spawn-sh-at-startup "/home/sudhirk/.scripts/lockscreen_boot.sh"
         spawn-sh-at-startup "python3 ~/.config/niri/scripts/niri_tile_to_n.py"
-        spawn-sh-at-startup "waybar"
         spawn-sh-at-startup "vicinae server"
         spawn-sh-at-startup "dotoold"
+        spawn-sh-at-startup "awww-daemon"
         spawn-sh-at-startup "/home/sudhirk/.scripts/sync_boot.sh < /home/sudhirk/.scripts/git_folders.txt"
         layer-rule {
             match namespace="^hyprpaper$"
+            place-within-backdrop true
+        }
+        layer-rule {
+            match namespace="^awww-daemon$"
             place-within-backdrop true
         }
         gestures { hot-corners { off; }; }

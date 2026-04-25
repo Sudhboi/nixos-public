@@ -37,6 +37,8 @@
     lazygit
     wlr-which-key
     btop
+    neovim
+    awww
     ncdu
     vicinae
     heroic

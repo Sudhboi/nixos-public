@@ -2,7 +2,7 @@
 
 {
   services.hyprpaper = {
-    enable = true;
+    #enable = true;
   };
   home.file.".config/hypr/hyprpaper.conf".source = ./hyprpaper.conf;
 }
