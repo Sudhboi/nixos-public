@@ -12,6 +12,7 @@
       # dynamic_background_opacity = true;
       # allow_remote_control = true;
       font_family = "IosevkaTerm Nerd Font";
+      cursor_trail = "3";
     };
     themeFile = "Catppuccin-Mocha";
   };

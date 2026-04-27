@@ -16,7 +16,6 @@
       push = "/home/sudhirk/.scripts/sync_poweroff.sh < /home/sudhirk/.scripts/git_folders.txt";
       pull = "/home/sudhirk/.scripts/sync_boot.sh < /home/sudhirk/.scripts/git_folders.txt";
       ns = "nix-shell --run zsh -p";
-      ghci = "~/.scripts/ghcitty";
     };
 
     initContent = ''

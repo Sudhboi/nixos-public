@@ -139,6 +139,11 @@
     rustup
   ];
 
+  programs.virt-manager.enable = true;
+  users.groups.libvirtd.members = [ "sudhirk" ];
+  virtualisation.libvirtd.enable = true;
+  virtualisation.spiceUSBRedirection.enable = true;
+
   # services.swapspace.enable = true;
   # services.howdy = {
   #   enable = true;

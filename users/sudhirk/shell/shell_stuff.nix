@@ -1,4 +1,4 @@
-{ ... }:
+{ config, ... }:
 
 {
   imports = [
@@ -9,4 +9,5 @@
     ./prompt/prompt.nix
     ./direnv/direnv.nix
   ];
+  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ./nvim;
 }

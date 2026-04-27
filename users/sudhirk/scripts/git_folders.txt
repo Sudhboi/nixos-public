@@ -1,4 +1,3 @@
 /home/sudhirk/Programming
 /home/sudhirk/LaTypst
-/home/sudhirk/.config/nvim
 /home/sudhirk/.dotfiles

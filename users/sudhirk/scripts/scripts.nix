@@ -11,8 +11,6 @@
   home.file.".scripts/drift".source = ./drift;
   home.file.".scripts/screensaver.sh".source = ./screensaver.sh;
 
-  home.file.".scripts/ghcitty".source = ./ghcitty;
-
   home.file.".scripts/sequence.sh".source = ./sequence.sh;
   home.file.".scripts/lockscreen_boot.sh".source = ./lockscreen_boot.sh;
   home.file.".scripts/poweroff.sh".source = ./poweroff.sh;
