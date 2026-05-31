@@ -18,8 +18,8 @@
         # }
         {
           timeout = 90;
-          on-timeout = "awww img /home/sudhirk/.config/wallpapers/sequence/6 --transition-type wipe --transition-fps 120 --transition-duration 2 --transition-angle 90";
-          on-resume = "awww img /home/sudhirk/.config/wallpapers/wallpaper_desktop --transition-type wipe --transition-fps 120 --transition-duration 2 --transition-angle 270";
+          on-timeout = "(pidof hyprlock) || awww img /home/sudhirk/.config/wallpapers/sequence/6 --transition-type wipe --transition-fps 120 --transition-duration 2 --transition-angle 90";
+          on-resume = "(pidof hyprlock) || awww img /home/sudhirk/.config/wallpapers/wallpaper_desktop --transition-type wipe --transition-fps 120 --transition-duration 2 --transition-angle 270";
         }
         {
           timeout = 180;

@@ -12,6 +12,7 @@
     ./tlp/tlp.nix
     ./nh/nh.nix
     ./boot.nix
+    ./fonts/fonts.nix
   ];
 
   # Bootloader.
@@ -28,8 +29,6 @@
 
   # Enable networking
   networking.networkmanager.enable = true;
-
-  programs.steam.enable = true;
 
   # Set your time zone.
   time.timeZone = "America/Moncton";
@@ -97,15 +96,6 @@
     "sudhirk"
   ];
 
-  fonts.packages = with pkgs; [
-    nerd-fonts.fira-code
-    nerd-fonts.droid-sans-mono
-    nerd-fonts.iosevka-term
-    nerd-fonts.symbols-only
-    nerd-fonts.jetbrains-mono
-    nerd-fonts.daddy-time-mono
-  ];
-
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -137,12 +127,15 @@
     cmake
     obsidian
     rustup
+    statix
+    vlc
+    # haskell
   ];
 
-  programs.virt-manager.enable = true;
-  users.groups.libvirtd.members = [ "sudhirk" ];
-  virtualisation.libvirtd.enable = true;
-  virtualisation.spiceUSBRedirection.enable = true;
+  # programs.virt-manager.enable = true;
+  # users.groups.libvirtd.members = [ "sudhirk" ];
+  # virtualisation.libvirtd.enable = true;
+  # virtualisation.spiceUSBRedirection.enable = true;
 
   # services.swapspace.enable = true;
   # services.howdy = {
@@ -156,6 +149,27 @@
   programs.nix-ld.enable = true;
   programs.nix-ld.libraries = with pkgs; [
     gcc
+    clang
+    # glib
+    # nspr
+    # nss
+    # dbus
+    # atk
+    # cups
+    # cairo
+    # pango
+    # gtk3
+    # libx11
+    # libXcomposite
+    # libXdamage
+    # libXext
+    # libXfixes
+    # libXrandr
+    # libgbm
+    # expat
+    # libxkbcommon
+    # libasound2
+    # libxcb
   ];
 
   # Some programs need SUID wrappers, can be configured further or are

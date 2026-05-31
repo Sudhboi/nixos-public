@@ -1,12 +1,10 @@
 # Public Repo for my NixOS Dotfiles
 
-I sync for use between my two machines (see users/sudhirk/scripts) so my private repository receives commits almost every hour. However, this does mean that I have to maintain this repository manually, so it might be out of date for up to a week at a time.
-
-# Rice!
+## Rice!
 
 ![Rice Image](./repo/rice.png)
 
-# Directory Structure (might be out of date)
+## Directory Structure (might be out of date)
 ```
 .
 ├── .editorconfig
@@ -184,3 +182,5 @@ I sync for use between my two machines (see users/sudhirk/scripts) so my private
                 ├── laptop.nix
                 └── zshrc.nix
 ```
+
+I sync for use between my two machines (see users/sudhirk/scripts) so my private repository receives commits almost every hour. However, this does mean that I have to maintain this repository manually, so it might be out of date for up to a week at a time.

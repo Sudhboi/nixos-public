@@ -1,7 +1,4 @@
 { ... }:
 
 {
-  programs.neovim = {
-    defaultEditor = true;
-  };
 }

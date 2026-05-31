@@ -1,22 +1,22 @@
 # Theming
-font: IosevkaTerm Nerd Font 12
+font: IosevkaTerm Nerd Font 0
 # background: "#1b1923"
-background: "#000000"
+background: "#1e1e2e"
 color: "#cdd6f4"
 # border: "#89b4fb"
-border: "#000000"
+border: "#cdd6f4"
 separator: " 󰜶  "
-border_width: 1
-corner_r: 12
-padding: 15 # Defaults to corner_r
+border_width: 2
+corner_r: 20
+# padding: 15 # Defaults to corner_r
 # rows_per_column: 5 # No limit by default
 column_padding: 25 # Defaults to padding
 
 # Anchor and margin
-anchor: left # One of center, left, right, top, bottom, bottom-left, top-left, etc.
+anchor: bottom # One of center, left, right, top, bottom, bottom-left, top-left, etc.
 # Only relevant when anchor is not center
 margin_right: -1
-margin_bottom: 200
+margin_bottom: 100
 margin_left: 100
 margin_top: 100
 
@@ -147,7 +147,7 @@ menu:
         cmd: "(pkill waybar && notify-send 'Disabled Waybar') || (waybar & notify-send 'Enabled Waybar')"
       - key: "w"
         desc: "Toggle Wallpaper"
-        cmd: "pkill swaybg || swaybg -i ~/Pictures/Wallpaper-Gargantua.jpg"
+        cmd: "pkill awww-daemon || aww-daemon"
       - key: "q"
         desc: "Quit"
         cmd: ""

@@ -3,14 +3,14 @@ require("config.lazy")
 
 require("luasnip").config.set_config({ -- Setting LuaSnip config
 
-    -- Enable autotriggered snippets
-    enable_autosnippets = true,
+  -- Enable autotriggered snippets
+  enable_autosnippets = true,
 
-    -- Use Tab (or some other key if you prefer) to trigger visual selection
-    --store_selection_keys = "<Tab>",
+  -- Use Tab (or some other key if you prefer) to trigger visual selection
+  --store_selection_keys = "<Tab>",
 
-    update_events = "TextChanged,TextChangedI",
-    link_roots = false,
+  update_events = "TextChanged,TextChangedI",
+  link_roots = false,
 })
 
 vim.cmd([[
@@ -57,3 +57,27 @@ au BufReadPre *.lagda* call CornelisLoadWrapper()
 
 au BufWritePost *.agda execute "normal! :CornelisLoad\<CR>"
 ]])
+
+if vim.g.neovide then
+  vim.o.guifont = "IosevkaTerm Nerd Font:h12:w-0.5"
+  vim.opt.shell = "/usr/bin/env zsh"
+  vim.g.neovide_padding_top = 0
+  vim.g.neovide_refresh_rate = 120
+  vim.g.neovide_padding_bottom = 0
+  vim.g.neovide_padding_right = 0
+  vim.g.neovide_padding_left = 0
+
+  local function copy()
+    vim.cmd([[normal! "+y]])
+  end
+  local function paste()
+    vim.api.nvim_paste(vim.fn.getreg("+"), true, -1)
+  end
+  vim.keymap.set("v", "<S-C-c>", copy, { silent = true, desc = "Copy" })
+  vim.keymap.set({ "i", "v", "c", "t" }, "<S-C-v>", paste, { silent = true, desc = "Paste" })
+
+  vim.g.neovide_opacity = 0.95
+  vim.g.neovide_normal_opacity = 0.95
+end
+
+--hello!

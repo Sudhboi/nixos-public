@@ -14,4 +14,9 @@
   home.file.".scripts/sequence.sh".source = ./sequence.sh;
   home.file.".scripts/lockscreen_boot.sh".source = ./lockscreen_boot.sh;
   home.file.".scripts/poweroff.sh".source = ./poweroff.sh;
+
+  home.file.".scripts/nv".source = ./nv.sh;
+
+  home.file.".scripts/flake.nix".source = ./flake.nix;
+  home.file.".scripts/.envrc".source = ./.envrc;
 }

@@ -51,12 +51,18 @@
         laptop = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ ./users/sudhirk/laptop.nix ];
-          extraSpecialArgs = { inherit inputs; };
+          extraSpecialArgs = {
+            inherit inputs;
+            hostName = "laptop";
+          };
         };
         desktop = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ ./users/sudhirk/desktop.nix ];
-          extraSpecialArgs = { inherit inputs; };
+          extraSpecialArgs = {
+            inherit inputs;
+            hostName = "desktop";
+          };
         };
       };
     };

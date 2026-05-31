@@ -11,16 +11,15 @@
       bat-info = "cat /sys/class/power_supply/BAT0/uevent";
       dt = "~/.backups/dotfiles/copy.sh";
       bruh = "python3 ~/.bruh/bruh.py";
-      wqa = "pkill yazi";
       lg = "lazygit";
       push = "/home/sudhirk/.scripts/sync_poweroff.sh < /home/sudhirk/.scripts/git_folders.txt";
       pull = "/home/sudhirk/.scripts/sync_boot.sh < /home/sudhirk/.scripts/git_folders.txt";
       ns = "nix-shell --run zsh -p";
+      nv = "neovide --fork";
+      dinit = "cat ~/.scripts/.envrc > .envrc && cat ~/.scripts/flake.nix > flake.nix";
     };
 
     initContent = ''
-
-      export PATH="$HOME/.emacs.d/bin:$PATH"
 
       function k1() {
           for ((i = 0.9 ; i <= 1.0 ; i = i + 0.05 )); do sleep 0.001 && kitty @ set-background-opacity $i; done

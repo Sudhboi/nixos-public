@@ -10,4 +10,5 @@
       };
     };
   };
+  home.file.".config/yazi/theme.toml".source = ./theme.toml;
 }

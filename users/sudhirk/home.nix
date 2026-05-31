@@ -26,6 +26,8 @@
   # release notes.
   home.stateVersion = "25.11"; # Please read the comment before changing.
 
+  nixpkgs.config.allowUnfree = true;
+
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
@@ -34,21 +36,25 @@
     # pkgs.hello
     zoxide
     swaybg
+    kdePackages.okular
     lazygit
     wlr-which-key
     btop
     neovim
+    neovide
     awww
     ncdu
     vicinae
     heroic
     nautilus
     speedtest-cli
-    mpv
     inkscape
     wl-clipboard
     dotool
+    olympus
     pinta
+    libqalculate
+    gh
     xwayland-satellite
     # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -96,7 +102,7 @@
   #  /etc/profiles/per-user/sudhirk/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "nvim";
+    EDITOR = "$HOME/.scripts/nv";
   };
 
   # Let Home Manager install and manage itself.

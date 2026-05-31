@@ -9,5 +9,6 @@
     ./prompt/prompt.nix
     ./direnv/direnv.nix
   ];
-  home.file.".config/nvim".source = config.lib.file.mkOutOfStoreSymlink ./nvim;
+  home.file.".config/nvim".source =
+    config.lib.file.mkOutOfStoreSymlink /home/sudhirk/.dotfiles/users/sudhirk/shell/nvim;
 }

@@ -18,7 +18,7 @@
       "application/x-extension-xht" = [ "zen-twilight.desktop" ];
     };
     defaultApplications = {
-      "application/pdf" = [ "sioyek.desktop" ];
+      "application/pdf" = [ "okular.desktop" ];
       "x-scheme-handler/http" = [ "zen-twilight.desktop;" ];
       "x-scheme-handler/https" = [ "zen-twilight.desktop;" ];
       "x-scheme-handler/chrome" = [ "zen-twilight.desktop;" ];
