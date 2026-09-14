@@ -1,5 +1,7 @@
 # Public Repo for my NixOS Dotfiles
 
+Warning: This repository is heavily outdated. I am working on a new config with flake-parts and a dendritic pattern, and it should be out soon!
+
 ## Rice!
 
 ![Rice Image](./repo/rice.png)
